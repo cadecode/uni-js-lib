@@ -1,3 +1,3 @@
-const {logSimpleJsLib} = require('../dist/SimpleJsLib');
+const {logSimpleJsLib} = require('../dist/simple-js-lib');
 
 logSimpleJsLib();
