@@ -7,6 +7,7 @@ module.exports = {
         filename: 'simple-js-lib.js',
         library: 'SimpleJsLib',
         libraryTarget: 'umd',
+        libraryExport: 'default',
         globalObject: 'this'
     }
 };
