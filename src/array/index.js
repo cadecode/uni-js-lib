@@ -1,7 +1,8 @@
-import shuffle from './shuffle';
-import unique from './unique';
+import { shuffle } from './shuffle';
+import { unique, uniqueBySet } from './unique';
 
 export default {
     shuffle,
-    ...unique
+    unique,
+    uniqueBySet
 };

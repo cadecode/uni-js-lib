@@ -6,7 +6,7 @@ const uniqueBySet = (arr) => {
     return [...new Set(arr)];
 };
 
-export default {
+export {
     unique,
     uniqueBySet
 }
