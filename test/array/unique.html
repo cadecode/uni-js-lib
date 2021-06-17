@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>unique</title>
+</head>
+<body>
+<script src="../../dist/simple-js-lib.js"></script>
+<script type="text/javascript">
+    const {unique, uniqueBySet} = window['SimpleJsLib'];
+
+    console.log(unique([1, 2, 3, 1, 2, 4, {}, {}, '1', [], []]));
+    console.log(uniqueBySet([1, 2, 3, 1, 2, 4, {}, {}, '1', [], []]));
+</script>
+</body>
+</html>
