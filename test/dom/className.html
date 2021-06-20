@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>className</title>
+</head>
+<body>
+<div id="app" class="a a b-c d_f g"></div>
+<script src="../../dist/simple-js-lib.js"></script>
+<script type="text/javascript">
+    const {hasClass, addClass, removeClass, toggleClass} = window['SimpleJsLib'];
+
+    const box = document.getElementById('app');
+
+    console.log(hasClass(box, 'a'));
+    console.log(hasClass(box, 'b-c'));
+    console.log(hasClass(box, 'e_f'));
+    console.log(hasClass(box, 'g'));
+
+    addClass(box, 'h');
+
+    removeClass(box, 'a');
+
+    toggleClass(box, 'i')
+</script>
+</body>
+</html>

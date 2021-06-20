@@ -1,5 +1,6 @@
 import typeLib from './type';
 import arrayLib from './array';
+import domLib from './dom';
 
 /**
  * 测试方法
@@ -11,5 +12,6 @@ function logSimpleJsLib() {
 export default {
     logSimpleJsLib,
     ...typeLib,
-    ...arrayLib
+    ...arrayLib,
+    ...domLib
 };
