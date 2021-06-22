@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>throttle</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 300vh;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<script src="../../dist/simple-js-lib.js"></script>
+<script type="text/javascript">
+    const {throttle} = window['SimpleJsLib'];
+
+    const handleScroll = () => {
+        console.log(new Date());
+    };
+    window.addEventListener('scroll', throttle(handleScroll, 1000));
+</script>
+</body>
+</html>
