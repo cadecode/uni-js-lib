@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>deepClone</title>
+</head>
+<body>
+<script src="../../dist/simple-js-lib.js"></script>
+<script type="text/javascript">
+    const {deepClone} = window['SimpleJsLib'];
+    const obj = {
+        name: 'Cade',
+        skills: ['Java', 'JS', 'Vue'],
+        computer: {
+            name: 'ThinkPad',
+            cpu: 'i7-10510u',
+            size: '13inch'
+        }
+    };
+
+    console.log(obj);
+
+    const clonedObj = deepClone(obj);
+
+    console.log(clonedObj);
+
+    clonedObj.name = 'Bob';
+    clonedObj.skills.push('SpringCloud');
+    clonedObj.computer.size = '14inch';
+
+    console.log(clonedObj);
+    console.log(obj);
+</script>
+</body>
+</html>
