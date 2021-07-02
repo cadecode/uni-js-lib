@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>elementPosition</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<script src="../../dist/simple-js-lib.js"></script>
+<script type="text/javascript">
+    const {getElementPosition, getMousePosition} = window['SimpleJsLib'];
+
+    const box = document.querySelector('.box');
+    console.log(getElementPosition(box));
+
+    box.onclick = (ev) => {
+        console.log(getMousePosition(ev));
+    };
+</script>
+</body>
+</html>
