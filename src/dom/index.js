@@ -2,7 +2,7 @@ import { hasClass, addClass, removeClass, toggleClass } from './className';
 import { getScrollOffset } from './scrollOffset';
 import { getDocumentSize, getViewportSize } from './documentSize';
 import { getElementPosition, getMousePosition } from './elementPosition';
-
+import { getElementStyle } from './elementStyle';
 export default {
     hasClass,
     addClass,
@@ -12,5 +12,6 @@ export default {
     getViewportSize,
     getDocumentSize,
     getElementPosition,
-    getMousePosition
+    getMousePosition,
+    getElementStyle
 };
