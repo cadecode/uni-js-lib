@@ -3,6 +3,8 @@ import { getScrollOffset } from './scrollOffset';
 import { getDocumentSize, getViewportSize } from './documentSize';
 import { getElementPosition, getMousePosition } from './elementPosition';
 import { getElementStyle } from './elementStyle';
+import { addEventProxy, removeEventProxy } from './eventProxy';
+
 export default {
     hasClass,
     addClass,
@@ -13,5 +15,7 @@ export default {
     getDocumentSize,
     getElementPosition,
     getMousePosition,
-    getElementStyle
+    getElementStyle,
+    addEventProxy,
+    removeEventProxy
 };
