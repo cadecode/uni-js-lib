@@ -1,4 +1,3 @@
-import typeLib from './type';
 import arrayLib from './array';
 import domLib from './dom';
 import funcLib from './function';
