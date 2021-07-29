@@ -12,7 +12,6 @@ function logSimpleJsLib() {
 
 export default {
     logSimpleJsLib,
-    ...typeLib,
     ...arrayLib,
     ...domLib,
     ...funcLib,
