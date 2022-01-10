@@ -1,6 +1,6 @@
 # simple-js-lib
 
-> 学习用的 JS 工具函数库
+> JavaScript 常用工具方法
 
 
 ## 使用
