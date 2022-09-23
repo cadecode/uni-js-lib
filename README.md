@@ -1,6 +1,6 @@
-# simple-js-lib
+# uni-js-lib
 
-> JavaScript 常用工具方法
+> 通用的 JS 工具函数库（供学习使用）
 
 
 ## 使用
@@ -13,18 +13,18 @@ npm run build
 在 HTML 中引入打包生成的 JS 文件即可使用
 
 ```html
-<script src="./dist/simple-js-lib.js"></script>
+<script src="./dist/uni-js-lib.js"></script>
 <script type="text/javascript">
-    const {logSimpleJsLib} = window['SimpleJsLib'];
+    const {logUniJsLib} = window['UniJsLib'];
 
-    logSimpleJsLib();
+    logUniJsLib();
 </script>
 ```
 在 Node 环境下，使用 Commonjs 规范引入即可使用
 
 ```javascript
-const {logSimpleJsLib} = require('../dist/SimpleJsLib');
+const {logUniJsLib} = require('../dist/UniJsLib');
 
-logSimpleJsLib();
+logUniJsLib();
 ```
 

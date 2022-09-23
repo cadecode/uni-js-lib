@@ -4,8 +4,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'simple-js-lib.js',
-        library: 'SimpleJsLib',
+        filename: 'uni-js-lib.js',
+        library: 'UniJsLib',
         libraryTarget: 'umd',
         libraryExport: 'default',
         globalObject: 'this'
